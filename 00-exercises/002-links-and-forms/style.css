@@ -1,0 +1,33 @@
+:root{
+    --infoeste-color: #133328;
+    --mono-color: #325E4E;
+    --complementary-color: #f3f3f3;
+    --button-color: #FF8C3F;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--mono-color);
+}
+header{
+    color: var(--complementary-color);
+    background-color: var(--infoeste-color);
+    text-align: center;
+    padding-bottom: 10px;
+}
+form{
+    color: var(--mono-color);
+    background-color: white;
+    width: 800px;
+    margin: 10px auto;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.479);
+    border-radius: 15px;
+}
+input{
+    width: 90%;
+    margin: 10px;
+}
