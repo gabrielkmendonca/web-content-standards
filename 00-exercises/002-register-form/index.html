@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>INFOESTE 2025 — Register</h1>
+        <p>Computing and Information Technology Week</p>
+    </header>
+    <main>
+        <form action="" method="post">
+            <p>Click here to learn about the <a href="https://www.w3schools.com/html/html_form_input_types.asp"
+                    target="_blank">new HTML5 inputs for forms.</a></p>
+            <fieldset>
+                <legend>Registration Data</legend>
+                <p><label for="name">Name</label><br>
+                    <input type="text" name="name" id="name" placeholder="Full name" required>
+                </p>
+                <p><label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </p>
+                <p><label for="cpf">CPF</label><br>
+                    <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
+                </p>
+                <p><label for="tel">Phone</label><br>
+                    <input type="tel" name="tel" id="tel" placeholder="Phone" required>
+                </p>
+                <p><label for="sex">Gender</label><br>
+                    <input type="radio" name="sex" id="m" checked>Male
+                    <input type="radio" name="sex" id="f">Female
+                </p>
+                <p>
+                    <label for="date">Birth</label><br>
+                    <input type="date" name="date" id="date" value="2025-09-09" required>
+                </p>
+                <p><label for="modality">Modality</label><br>
+                    <input type="radio" name="modality" id="on-site" checked>On-site
+                    <input type="radio" name="modality" id="remote">Remote
+                </p>
+                <p>
+                    <label for="state">State</label><br>
+                    <select name="state" id="state" required>
+                        <option value="">-- Select --</option>
+                        <optgroup label="Norte">
+                            <option value="AC">Acre</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="PA">Pará</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="TO">Tocantins</option>
+                        </optgroup>
+                        <optgroup label="Nordeste">
+                            <option value="AL">Alagoas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="SE">Sergipe</option>
+                        </optgroup>
+                        <optgroup label="Centro-Oeste">
+                            <option value="GO">Goiás</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                        </optgroup>
+                        <optgroup label="Sudeste">
+                            <option value="ES">Espirito Santo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </optgroup>
+                        <optgroup label="Sul">
+                            <option value="PR">Paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                        </optgroup>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset id="courses">
+                <legend>Courses</legend>
+                <p><input type="checkbox" name="py" id="py">
+                    <label for="py">Python Introduction</label>
+                </p>
+                <p><input type="checkbox" name="html-css" id="html-css">
+                    <label for="html-css">HTML e CSS</label>
+                </p>
+                <p><input type="checkbox" name="unity" id="unity">
+                    <label for="unity">Web Games with Unity</label>
+                </p>
+                <p><input type="checkbox" name="linux" id="linux">
+                    <label for="linux">Linux Party</label>
+                </p>
+                <p><input type="checkbox" name="ai" id="ai">
+                    <label for="ai">Introduction to Artifical Inteligence</label>
+                </p>
+                <p><input type="checkbox" name="instagram" id="instagram">
+                    <label for="instagram">Instagram Content Production</label>
+                </p>
+                <p><input type="checkbox" name="ue5" id="ue5">
+                    <label for="ue5">Game Development with UE5</label>
+                </p>
+                <p><input type="checkbox" name="marathon" id="marathon">
+                    <label for="marathon">Programming Marathon</label>
+                </p>
+                <p><input type="checkbox" name="kub" id="kub">
+                    <label for="kub">Kubernetes</label>
+                </p>
+                <p><input type="checkbox" name="go" id="go">
+                    <label for="go">Go Programming Language</label>
+                </p>
+            </fieldset>
+            <fieldset style="column-count: 1;">
+                <legend>Extra Notes</legend>
+                <textarea name="textarea" id="textarea" cols="98" rows="10"
+                    placeholder="Leave extra notes for your registration"></textarea>
+            </fieldset>
+            <p id="button"><input type="submit" value="Register"></p>
+        </form>
+    </main>
+    <footer>
+        <p><img src="logoUnoesteBranco.png" alt="Logo Unoeste"></p>
+    </footer>
+</body>
+
+</html>
