@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulary Page</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/form.css">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/bce0f08c01.js" crossorigin="anonymous"></script>
 </head>
@@ -18,5 +18,67 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <form action="" method="post">
+            <h1>Preencha os dados do veículo</h1>
+            <p id="marca">
+                <label for="marca" class="obrigatorio">Marca</label>
+                <input type="text" name="marca-carro" id="marca-carro" required>
+            </p>
+            <p id="modelo">
+                <label for="modelo-carro" class="obrigatorio">Modelo</label>
+                <input type="text" name="modelo-carro" id="modelo-carro" required>
+            </p>
+            <p id="ano">
+                <label for="ano-modelo" class="obrigatorio">Ano do Modelo</label>
+                <input type="number" name="ano-modelo" id="ano-modelo" max="2026" required>
+                <label for="ano-fabri" class="obrigatorio">Fabricação</label>
+                <input type="number" name="ano-fabri" id="ano-fabri"  max="2025" required>
+            </p>
+            <p id="versao">
+                <label for="versao-carro" class="obrigatorio">Versão</label>
+                <input type="text" name="versao-carro" id="versao-carro" required>
+            </p>
+            <p id="cor">
+                <label for="cor-carro" class="obrigatorio">Cor</label>
+                <select name="cor-carro" id="cor-carro" required>
+                    <option value="">--Selecione--</option>
+                    <option value="">Amarelo</option>
+                    <option value="">Azul</option>
+                    <option value="">Bege</option>
+                    <option value="">Branco</option>
+                    <option value="">Bronze</option>
+                    <option value="">Cinza</option>
+                    <option value="">Dourado</option>
+                    <option value="">Laranja</option>
+                    <option value="">Marrom</option>
+                    <option value="">Prata</option>
+                    <option value="">Preto</option>
+                    <option value="">Rosa</option>
+                    <option value="">Roxo</option>
+                    <option value="">Verde</option>
+                    <option value="">Vermelho</option>
+                    <option value="">Vinho</option>
+                </select>
+            </p>
+            <p id="blindado">
+                <input type="checkbox" name="blind" id="blind">
+                <label for="blind"> Blindado</label>
+            </p>
+            <p id="imagem">
+                <label for="imagem-veiculo">Adicione Imagens do Veículo</label>
+                <input type="file" name="imagem-veiculo" id="imagem-veiculo" accept="image/*" multiple required>
+            </p>
+            <p id="informacao">
+                <textarea name="info" id="info" rows="10" placeholder="Forneça informações adicionais sobre o veículo"></textarea>
+            </p>
+            <p id="enviar">
+                <input type="submit" value="Cadastrar Veículo" id="cadastrar">
+            </p>
+        </form>
+    </main>
+    <footer>
+        <p>Formulário desenvolvido por Gabriel Karlinski Mendonça</p>
+    </footer>
 </body>
 </html>

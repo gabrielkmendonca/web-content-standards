@@ -1,0 +1,124 @@
+:root{
+  --main-background: #161B22;
+  --text-reverse: #EDEDED;
+  --text: #1A1A1A;
+  --emphasis: #3FB950;
+  --emphasis-reverse: #238636;
+  --card-background: #444444;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+  line-height: 1.5em;
+  background-color: var(--main-background);
+  color: var(--text-reverse);
+}
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header, footer{
+  background-color: var(--emphasis);
+  color: var(--text);
+  padding: 10px;
+  text-align: center;
+}
+nav#menu > ul{
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  gap: 0.25em;
+  list-style-type: none;
+}
+nav#menu > ul > li > a{
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text);
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color .3s, color .3s;
+}
+nav#menu > ul > li > a:hover{
+  background-color: var(--emphasis-reverse);
+  color: var(--text-reverse);
+}
+main{
+  width: 80vw;
+  background-color: var(--card-background);
+  color: var(--text-reverse);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.473);
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+form > h1{
+  text-align: center;
+  margin: 20px;
+  color: var(--emphasis);
+}
+form > p{
+  margin: 10px;
+}
+form > p#ano{
+  columns: 2;
+}
+form label.obrigatorio::after{
+  content: "*";
+  font-size: 0.8em;
+}
+form input{
+  width: 100%;
+  height: 30px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: var(--main-background);
+  color: var(--text-reverse);
+}
+form p#blindado{
+  display: flex;
+  align-self: start;
+  gap: 8px;
+  align-items: center;
+  accent-color: var(--emphasis);
+}
+form select{
+  background-color: var(--main-background);
+  color: var(--text-reverse);
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  padding: 8px;
+}
+form textarea{
+  padding: 8px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: var(--main-background);
+  color: var(--text-reverse);
+}
+form p#enviar{
+  align-self: center;
+}
+form input#cadastrar{
+  font-size: 1.1em;
+  height: 40px;
+  background-color: var(--emphasis-reverse);
+  color: var(--text);
+  font-weight: bold;
+  transition: background .2s, font-size .2s;
+}
+form input#cadastrar:hover{
+  cursor: pointer;
+  background-color: var(--emphasis);
+  font-size: 1.2em;
+}
