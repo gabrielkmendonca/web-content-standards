@@ -23,21 +23,21 @@
             <h1>Preencha os dados do veículo</h1>
             <p id="marca">
                 <label for="marca" class="obrigatorio">Marca</label>
-                <input type="text" name="marca-carro" id="marca-carro" required>
+                <input type="text" name="marca-carro" id="marca-carro" required placeholder="Informe a marca">
             </p>
             <p id="modelo">
                 <label for="modelo-carro" class="obrigatorio">Modelo</label>
-                <input type="text" name="modelo-carro" id="modelo-carro" required>
+                <input type="text" name="modelo-carro" id="modelo-carro" required placeholder="Informe o modelo">
             </p>
             <p id="ano">
                 <label for="ano-modelo" class="obrigatorio">Ano do Modelo</label>
-                <input type="number" name="ano-modelo" id="ano-modelo" max="2026" required>
+                <input type="number" name="ano-modelo" id="ano-modelo" max="2026" required placeholder="Informe o ano do modelo">
                 <label for="ano-fabri" class="obrigatorio">Fabricação</label>
-                <input type="number" name="ano-fabri" id="ano-fabri"  max="2025" required>
+                <input type="number" name="ano-fabri" id="ano-fabri"  max="2025" required placeholder="Informe o ano de fabricação">
             </p>
             <p id="versao">
                 <label for="versao-carro" class="obrigatorio">Versão</label>
-                <input type="text" name="versao-carro" id="versao-carro" required>
+                <input type="text" name="versao-carro" id="versao-carro" required placeholder="Informe a versão">
             </p>
             <p id="cor">
                 <label for="cor-carro" class="obrigatorio">Cor</label>
@@ -64,6 +64,14 @@
             <p id="blindado">
                 <input type="checkbox" name="blind" id="blind">
                 <label for="blind"> Blindado</label>
+            </p>
+            <p id="quilimetragem">
+                <label for="km">Quilometragem</label>
+                <input type="number" name="km" id="km" required placeholder="Informe a quilometragem">
+            </p>
+            <p id="preco">
+                <label for="preco-carro">Preço</label>
+                <input type="number" name="preco-carro" id="preco-carro" placeholder="Informe o preço de venda">
             </p>
             <p id="imagem">
                 <label for="imagem-veiculo">Adicione Imagens do Veículo</label>
