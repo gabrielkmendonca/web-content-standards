@@ -1,0 +1,50 @@
+:root{
+  --main-background: #161B22;
+  --text-reverse: #EDEDED;
+  --text: #1A1A1A;
+  --emphasis: #3FB950;
+  --emphasis-reverse: #238636;
+  --card-background: #444444;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+  line-height: 1.5em;
+  background-color: var(--main-background);
+  color: var(--text-reverse);
+}
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header, footer{
+  background-color: var(--emphasis);
+  color: var(--text);
+  padding: 10px;
+  text-align: center;
+}
+nav#menu > ul{
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  gap: 0.25em;
+  list-style-type: none;
+}
+nav#menu > ul > li > a{
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text);
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color .3s, color .3s;
+}
+nav#menu > ul > li > a:hover{
+  background-color: var(--emphasis-reverse);
+  color: var(--text-reverse);
+}
