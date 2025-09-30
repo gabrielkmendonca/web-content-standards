@@ -75,14 +75,15 @@ form > p#ano{
 form label.obrigatorio::after{
   content: "*";
   font-size: 0.8em;
+  color: rgb(250, 61, 61);
 }
 form input{
+  background-color: var(--main-background);
+  color: var(--text-reverse);
   width: 100%;
   height: 30px;
   padding: 8px;
   border-radius: 10px;
-  background-color: var(--main-background);
-  color: var(--text-reverse);
 }
 form p#blindado{
   display: flex;
