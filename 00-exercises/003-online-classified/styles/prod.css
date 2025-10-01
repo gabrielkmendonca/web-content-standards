@@ -1,0 +1,128 @@
+:root{
+  --main-background: #161B22;
+  --text-reverse: #EDEDED;
+  --text: #1A1A1A;
+  --emphasis: #3FB950;
+  --emphasis-reverse: #238636;
+  --card-background: #444444;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+  line-height: 1.5em;
+  background-color: var(--main-background);
+  color: var(--text-reverse);
+}
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header, footer{
+  background-color: var(--emphasis);
+  color: var(--text);
+  padding: 10px;
+  text-align: center;
+}
+nav#menu > ul{
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  gap: 0.25em;
+  list-style-type: none;
+}
+nav#menu > ul > li > a{
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text);
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color .3s, color .3s;
+}
+nav#menu > ul > li > a:hover{
+  background-color: var(--emphasis-reverse);
+  color: var(--text-reverse);
+}
+
+
+
+
+section{
+  width: 90vw;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.473);
+}
+#tecnico{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+#tecnico > div#imagens{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  overflow-x: scroll;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+#tecnico > div#imagens > img{
+  width: 33%;
+}
+#tecnico h1{
+  margin-bottom: 10px;
+}
+#tecnico  h1  strong{
+  color: var(--emphasis);
+}
+#tecnico > div#infos{
+  display: flex;
+  flex-wrap: wrap;
+}
+#tecnico > div#infos > div{
+  width: 33%;
+  margin-top: 20px;
+}
+#tecnico  div  h2{
+  font-size: .8em;
+  font-weight: normal;
+}
+#tecnico div p{
+  font-weight: 600;
+  margin: 3px 0px;
+}
+#geral div h2{
+  margin-bottom: 10px;
+}
+#geral div p{
+  text-align: justify;
+}
+
+
+
+section#semelhantes > div#imagens{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  align-content: space-evenly;
+}
+section#semelhantes > div#imagens > div.card{
+  border-radius: 10px;
+  background-color: white;
+  color: var(--text);
+}
+section#semelhantes > div#imagens > div.card > a > img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+div.card > h3, div.card > p{
+  padding: 8px;
+}
