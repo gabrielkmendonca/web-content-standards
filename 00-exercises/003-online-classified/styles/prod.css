@@ -48,10 +48,6 @@ nav#menu > ul > li > a:hover{
   background-color: var(--emphasis-reverse);
   color: var(--text-reverse);
 }
-
-
-
-
 section{
   width: 90vw;
   margin: 20px auto;
@@ -104,8 +100,17 @@ section{
 #geral div p{
   text-align: justify;
 }
-
-
+div#contato{
+  margin-top: 10px;
+}
+div#contato a{
+  color: var(--emphasis);
+  font-weight: 600;
+  transition: font-size .2s;
+}
+div#contato a:hover{
+  font-size: 1.1em;
+}
 
 section#semelhantes > div#imagens{
   margin-top: 20px;
