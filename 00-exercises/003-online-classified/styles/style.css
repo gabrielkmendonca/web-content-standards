@@ -57,6 +57,11 @@ section#principal{
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.473);
 }
+section#principal > h1{
+  text-align: center;
+  margin: 10px;
+  color: var(--emphasis);
+}
 section.card{
   display: flex;
   flex-direction: row;
