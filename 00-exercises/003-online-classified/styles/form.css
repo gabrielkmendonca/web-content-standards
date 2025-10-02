@@ -32,12 +32,13 @@ header, footer{
 nav#menu > ul{
   display: flex;
   align-content: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 0.25em;
   list-style-type: none;
 }
 nav#menu > ul > li > a{
   text-decoration: none;
+  font-size: 1.2em;
   font-weight: 600;
   color: var(--text);
   border-radius: 5px;
@@ -116,7 +117,7 @@ form input#cadastrar{
   background-color: var(--emphasis-reverse);
   color: var(--text);
   font-weight: bold;
-  transition: background .2s, font-size .2s;
+  transition: background-color .2s, font-size .2s;
 }
 form input#cadastrar:hover{
   cursor: pointer;

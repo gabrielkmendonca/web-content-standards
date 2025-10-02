@@ -32,7 +32,8 @@ header, footer{
 nav#menu > ul{
   display: flex;
   align-content: center;
-  justify-content: flex-end;
+  justify-content: center;
+  font-size: 1.2em;
   gap: 0.25em;
   list-style-type: none;
 }
@@ -47,4 +48,44 @@ nav#menu > ul > li > a{
 nav#menu > ul > li > a:hover{
   background-color: var(--emphasis-reverse);
   color: var(--text-reverse);
+}
+section#principal{
+  background-color: var(--card-background);
+  width: 80vw;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.473);
+}
+section.card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid gray;
+  border-radius: 10px;
+  gap: 20px;
+  padding: 10px;
+  margin: 20px;
+}
+section.card > img{
+  max-width: 40%;
+  aspect-ratio: 4/3;
+}
+section.card > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+section.card > div > a{
+  background-color: white;
+  color: var(--text);
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.473);
+  padding: 8px;
+  width: max-content;
+  transition: scale .2s
+}
+section.card > div > a:hover{
+  transform: scale(1.05);
+  font-weight: 500;
 }
