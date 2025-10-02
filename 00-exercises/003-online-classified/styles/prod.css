@@ -70,8 +70,8 @@ section{
   flex-direction: row;
   gap: 15px;
   overflow-x: scroll;
+  padding-bottom: 5px;
   margin-bottom: 20px;
-  border-radius: 10px;
 }
 #tecnico > div#imagens > img{
   width: 33%;
